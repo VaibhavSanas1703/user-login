@@ -1,0 +1,132 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Figtree',sans-serif;
+}
+
+:root{
+    --primary-color:#0E4C71;
+    --secondary-color:#fad250;
+}
+
+body{
+    background-image:linear-gradient(360deg,rgba(0,0,0,0.9),rgba(0,0,0,0.6)), url(bg2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#login-container{
+    display: none;
+}
+
+.container{
+    width: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 30px;
+    position: relative;
+    /* background: rgba(255,255,255,0.1); */
+    background: #080808;
+    border-radius: 30px;
+    position: absolute;
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button{
+    appearance: none;
+}
+
+#form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+.heading h1{
+    color: var(--secondary-color);
+    font-weight: 900;
+    letter-spacing: 0.3px;
+}
+
+.inputs{
+    width: 100%;
+    position: relative;
+    margin-top: 6px;
+    border-radius: 50px;
+}
+
+.inputs input{
+    width: 100%;
+    padding: 15px;
+    outline: none;
+    border: 1px solid rgba(255,255,255,0.2);
+    font-size: 16px;
+    background: transparent;
+    color: #fff;
+    border-radius: 50px;
+}
+
+input:focus{
+    border-color: rgba(255,255,255,0.3);;
+}
+
+::placeholder{
+    color: rgba(255,255,255,0.9);
+}
+
+.inputs ion-icon{
+   position: absolute;
+   right: 18px;
+   top: 16px;
+   font-size: 20px;
+   color: var(--secondary-color);
+}
+
+.text{
+    margin-top: 15px;
+    color: #fff;
+}
+
+.text p a{
+    color: var(--secondary-color);
+}
+
+.login-btn{
+    margin: 10px 0 10px 0;
+    width: 100%;
+}
+
+.login-btn button{
+    width: 100%;
+    padding: 14px;
+    font-size: 18px;
+    background: var(--secondary-color);
+    outline: none;
+    border: 0;
+    color: #ffffff;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+#eye{
+    cursor: pointer;
+}
+
+@media (max-width:500px){
+    .container{
+        width: 92%;
+    }
+}

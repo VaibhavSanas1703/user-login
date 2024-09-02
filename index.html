@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- *IMPORT FONTS FROM GOOGLE FONTS WEBSITE -->
+     <link href="https://fonts.googleapis.com/css?family=Figtree:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+
+     <!-- * IMPORT ICONS FROM IOICONS WEBSITE -> CDN -->
+     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!--* CUSTOM CSS FILE -->
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- *LOGIN CONTAINER -->
+
+    <div class="container" id="login-container">
+        <form id="form">
+            <div class="heading">
+                <h1>LOGIN</h1>
+            </div>
+
+            <div class="inputs">
+                <ion-icon name="person"></ion-icon>
+                <input type="text" placeholder="Username or email">
+               </div>
+
+            <div class="inputs">
+                <ion-icon name="eye-off"></ion-icon>
+                    <input type="password" placeholder="Password">
+            </div>
+
+            <div class="text">
+                <p>Don't have an account? <a href="#" id="register-btn-a">Register</a></p>
+            </div>
+
+            <div class="login-btn">
+                <div>
+                    <button id="btn">Login</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <!-- *SIGN UP CONTAINER -->
+
+    <div class="container"  id="sign-up-container"  data-aos="fade-up">
+        <form id="form">
+            <div class="heading">
+                <h1>SIGN UP</h1>
+            </div>
+
+            <div class="inputs">
+                <ion-icon name="person"></ion-icon>
+                <input type="text" placeholder="Name" autofocus>
+             </div>
+
+            <div class="inputs">
+                <ion-icon name="call"></ion-icon>
+                    <input type="number" placeholder="Phone Number">
+            </div>
+
+            <div class="inputs">
+                <ion-icon name="mail"></ion-icon>
+                 <input type="email" placeholder="Email">
+         </div>
+
+         <div class="inputs">
+            <ion-icon name="eye-off" id="eye"></ion-icon>
+             <input type="password" id="pass" placeholder="Create Password">
+         </div>
+
+            <div class="text">
+                <p>Already have an account? <a href="#" id="login-btn-a">Login</a></p>
+            </div>
+
+            <div class="login-btn">
+                <div>
+                    <button id="btn" class="sign-up-btn-down">Sign up</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
